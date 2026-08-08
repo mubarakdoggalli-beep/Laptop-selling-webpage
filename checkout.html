@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | TechStore</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            <h2>💻 TechStore</h2>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            
+        </nav>
+
+    </header>
+
+    <!-- Checkout Section -->
+    <section>
+
+        <h2>Checkout</h2>
+
+        <form>
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="email" placeholder="Email Address" required>
+
+            <input type="tel" placeholder="Phone Number" required>
+
+            <textarea rows="5" placeholder="Delivery Address" required></textarea>
+
+            <select required>
+                <option value="">Select Payment Method</option>
+                <option>Cash on Delivery</option>
+                <option>UPI</option>
+                <option>Credit Card</option>
+                <option>Debit Card</option>
+                <option>Net Banking</option>
+            </select>
+
+            <button type="submit">
+                Place Order
+            </button>
+
+        </form>
+
+        <div style="text-align:center; margin-top:30px;">
+            <h3>✔ Thank you for shopping with TechStore!</h3>
+            <p>Your order will be confirmed after clicking <strong>Place Order</strong>.</p>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 TechStore. All Rights Reserved.</p>
+    </footer>
+<script>
+const form = document.querySelector("form");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    alert("🎉 Your order has been placed successfully!");
+
+    window.location.href = "products.html";
+});
+</script>
+    
+</body>
+</html>
